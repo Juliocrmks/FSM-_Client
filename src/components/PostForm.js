@@ -12,6 +12,9 @@ function PostForm() {
   const [createPost, { error }] = useMutation(CREATE_POST_MUTATION, {
     variables: values,
     refetchQueries: (refetchPosts) => [{ query: FETCH_POSTS_QUERY }],
+    update() {
+      values.body = "";
+    },
     onError() {
       console.log("error");
     },
