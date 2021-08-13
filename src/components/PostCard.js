@@ -1,9 +1,8 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Card, Icon, Label, Button, Image } from "semantic-ui-react";
 import moment from "moment";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../context/auth";
-import { useContext } from "react/cjs/react.development";
 import LikeButton from "../components/LikeButton";
 import DeleteButton from "./DeleteButton";
 
