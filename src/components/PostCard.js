@@ -11,8 +11,6 @@ function PostCard({
   post: { body, createdAt, id, username, likeCount, commentCount, likes },
 }) {
   const { user } = useContext(AuthContext);
-  function likePost() {}
-  function deletePost() {}
   return (
     <Card fluid>
       <Card.Content>
