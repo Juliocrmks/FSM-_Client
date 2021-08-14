@@ -5,6 +5,7 @@ import { GET_USERS } from "../utils/graphql";
 import { useMessageDispatch, useMessageState } from "../context/message";
 import classNames from "classnames";
 
+
 function Users() {
   const dispatch = useMessageDispatch();
   const { users } = useMessageState();
@@ -42,7 +43,7 @@ function Users() {
             className="user-image ml-2 "
           />
           <div
-          classNam="d-none d-md-block"
+          className="d-none d-md-block"
             style={{
               paddingLeft: "1rem",
               display: "flex",
