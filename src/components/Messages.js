@@ -4,7 +4,6 @@ import { useLazyQuery, useMutation } from "@apollo/react-hooks";
 import { Col, Form } from "react-bootstrap";
 import { useMessageDispatch, useMessageState } from "../context/message";
 import Message from "../components/Message";
-import { StepContent } from "semantic-ui-react";
 
 export default function Messages() {
   const { users } = useMessageState();
