@@ -34,7 +34,7 @@ export default function Messages() {
     if (selectedUser && !selectedUser.messages) {
       getMessages({ variables: { from: selectedUser.username } });
     }
-  }, [selectedUser]);
+  }, [selectedUser]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     if (messagesData) {
@@ -46,7 +46,7 @@ export default function Messages() {
         },
       });
     }
-  }, [messagesData]);
+  }, [messagesData]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const submitMessage = (e) => {
     e.preventDefault();
