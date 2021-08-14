@@ -20,10 +20,20 @@ function MenuBar() {
     as={Link}
     to="/"
   />
+  <Menu.Item
+    name="Messages"
+    active={activeItem === "messages"}
+    onClick={handleItemClick}
+    as={Link}
+    to="/messages"
+  />
   <Menu.Menu position="right">
     <Menu.Item
       name="logout"
-      onClick={logout}
+      onClick={()=>{
+        logout()
+        window.location.href= '/'
+      }}
     />
   </Menu.Menu>
 </Menu>
