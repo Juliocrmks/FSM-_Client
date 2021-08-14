@@ -104,7 +104,6 @@ const REGISTER_USER = gql`
         confirmPassword: $confirmPassword
       }
     ) {
-      id
       email
       username
       createdAt
