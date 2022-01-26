@@ -13,6 +13,9 @@ import SinglePost from "./pages/SinglePost";
 import MessagingScene from "./pages/MessagingScene";
 import { MessageProvider } from "./context/message";
 
+
+// Edgar se la come
+
 function App() {
   return (
     <AuthProvider>
