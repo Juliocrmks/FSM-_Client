@@ -14,7 +14,7 @@ import MessagingScene from "./pages/MessagingScene";
 import { MessageProvider } from "./context/message";
 
 
-// Edgar se la come
+// Edgar se la come y lulu tambien
 
 function App() {
   return (
